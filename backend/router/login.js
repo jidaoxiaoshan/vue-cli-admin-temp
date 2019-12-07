@@ -8,4 +8,4 @@ login.get('/login',(req,res) => {
     })
 });
 
-modules.exports = login;
+module.exports = login;
