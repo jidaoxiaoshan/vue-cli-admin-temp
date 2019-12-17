@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = 'mongodb://localhost/test';
+const uri = 'mongodb://localhost:27017/ji_dao';
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -14,12 +14,45 @@ const options = {
 
 mongoose.connect(uri, options);
 
-var ObjectId = mongoose.Types.ObjectId;
-var id1 = new ObjectId;
+let ObjectId = mongoose.Types.ObjectId;
+let id1 = new ObjectId;
 
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
+db.on('open', function () {
     // we're connected!
     console.log("链接数据库成功!","jd_" + id1);
 });
+
+
+// 简易版无配置的连接方法
+/*const mongoose = require('mongoose');
+mongoose.Promise = Promise
+
+const uri = 'mongodb://localhost:27017/ji_dao';
+mongoose.connect(uri, {useMongoClient: true});
+const db = mongoose.connection;
+
+db.on('open', ()=>{
+    console.log('db connection');
+});
+
+db.on('error', ()=>{
+    console.log('db error');
+});*/
+
+module.exports = db;
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = db;

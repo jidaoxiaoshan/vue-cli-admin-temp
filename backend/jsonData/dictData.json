@@ -1,0 +1,62 @@
+{
+  "total": 3,
+  "rows": [
+    {
+      "searchValue": null,
+      "createBy": "admin",
+      "createTime": "2018-03-16 03:33:00",
+      "updateBy": null,
+      "updateTime": null,
+      "remark": "性别男",
+      "dataScope": null,
+      "dictCode": 1,
+      "dictSort": 1,
+      "dictLabel": "男",
+      "dictValue": "0",
+      "dictType": "sys_user_sex",
+      "cssClass": "",
+      "listClass": "",
+      "isDefault": "Y",
+      "status": "0",
+      "default": true
+    },
+    {
+      "searchValue": null,
+      "createBy": "admin",
+      "createTime": "2018-03-16 03:33:00",
+      "updateBy": null,
+      "updateTime": null,
+      "remark": "性别女",
+      "dataScope": null,
+      "dictCode": 2,
+      "dictSort": 2,
+      "dictLabel": "女",
+      "dictValue": "1",
+      "dictType": "sys_user_sex",
+      "cssClass": "",
+      "listClass": "",
+      "isDefault": "N",
+      "status": "0",
+      "default": false
+    },
+    {
+      "searchValue": null,
+      "createBy": "admin",
+      "createTime": "2018-03-16 03:33:00",
+      "updateBy": null,
+      "updateTime": null,
+      "remark": "性别未知",
+      "dataScope": null,
+      "dictCode": 3,
+      "dictSort": 3,
+      "dictLabel": "未知",
+      "dictValue": "2",
+      "dictType": "sys_user_sex",
+      "cssClass": "",
+      "listClass": "",
+      "isDefault": "N",
+      "status": "0",
+      "default": false
+    }
+  ]
+}

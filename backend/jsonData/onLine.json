@@ -1,0 +1,15 @@
+{
+  "total": 1,
+  "rows": [
+    {
+      "tokenId": "e8563ecf-dcf5-40ae-8548-22b69b9c1e75",
+      "deptName": "研发部门",
+      "userName": "admin",
+      "ipaddr": "192.168.0.110",
+      "loginLocation": "内网IP",
+      "browser": "Firefox 7",
+      "os": "Windows 10",
+      "loginTime": 1576484161650
+    }
+  ]
+}

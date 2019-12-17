@@ -45,10 +45,10 @@ module.exports = {
         open:true,
         proxy: {
             [process.env.VUE_APP_BASE_API]: {
-                target: `http://localhost:8041`,
+                target: `http://localhost:8081`,
                 changeOrigin: true,
                 pathRewrite: {
-                    ['^' + process.env.VUE_APP_BASE_API]: ''
+                  ['^' + process.env.VUE_APP_BASE_API]: ''
                 }
             }
         },
@@ -74,9 +74,12 @@ module.exports = {
             sass: {
                 // 引入全局变量样式,@使我们设置的别名,执行src目录
                 data: `
-               @import "@/assets/css/variable.scss"; 
+               @import "@/assets/css/btn.scss"; 
+               @import "@/assets/css/variables.scss"; 
                @import "@/assets/css/common.scss";
                @import "@/assets/css/mixin.scss";
+               @import "@/assets/css/transition.scss";
+               @import "@/assets/css/sidebar.scss";
               `
             }
         }
@@ -117,4 +120,4 @@ module.exports = {
                     });
         }
     },
-}
+};
